@@ -1,5 +1,5 @@
 # Photon
-Linux Desktop Assistant, currently only beta versions for Ubuntu, you can try on other distro it might work but I haven't tried it yet! We will expand to other distros on upcomimg versions
+Linux Desktop Assistant, currently only beta versions for Ubuntu, you can try on other distro it might work but I haven't tried it yet! I will release for other distro in future!
 
 Photon is linux desktop assistant that open your apps from voice or text instruction and install common apps like chrome from text instruction.
 
