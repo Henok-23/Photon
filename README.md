@@ -1,6 +1,6 @@
 # Photon
 
-This version is for demo purpose only, you can only install few apps, few commands and has lots of bugs I will try to make it better with each and every release!
+This version is for demo purpose only and gauge interst to know if its product worth investing lots of time, you can only install few apps, few commands and has lots of bugs I will try to make it better with each and every release!
 
 Linux Desktop Assistant, currently only beta versions for Ubuntu, you can try on other distro it might work but I haven't tried it yet! I will release for other distro in future!
 
