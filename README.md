@@ -6,6 +6,7 @@ you can try on other distro it might work but I haven't tried it yet
 I will release for other distro in future!
 
 
+
 This version is for demo purpose only and gauge interest. You can only install few apps, few commands and may have bugs. However, I will try my best to make it better with each and every release!
 
 Photon is linux desktop assistant that open your apps from voice or text instruction and install common apps like chrome from text instruction.
