@@ -1,6 +1,8 @@
 # Photon
 Linux Desktop Assistant, currently available only on for Ubuntu
+
 you can try on other distro it might work but I haven't tried it yet
+
 I will release for other distro in future!
 
 
