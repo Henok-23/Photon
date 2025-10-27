@@ -7,7 +7,7 @@ This is beta version and my first release, I plan to integrate photon with email
 
 Its mainly task focused like automating boring stuff on linux and local. 
 
-Please check  my website photondesktop.com to download and turn it on to try it!
+Please check  my website photondesktop.com to download and try it!
 
 https://github.com/user-attachments/assets/67eb398a-95bf-4ea6-9fdd-295123cc4c5e
 
