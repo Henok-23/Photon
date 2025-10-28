@@ -13,7 +13,7 @@ Photon is linux desktop assistant that open your apps from voice or text instruc
 
 This is beta version and my first release, I plan to integrate photon with email, calendar, slack etc. 
 
-Please check the [Text](https://photondesktop.com) to download and try it!
+Please got to [Photon](https://photondesktop.com) to download and try it!
 
 https://github.com/user-attachments/assets/67eb398a-95bf-4ea6-9fdd-295123cc4c5e
 
