@@ -3,8 +3,6 @@ Linux Desktop Assistant
 
 Tested only on Ubuntu, should work on all major Linux distros with Flatpak support
 
-you can try on other distro it might work but I haven't tried it yet. I will release for other distros in future!
-
 
 This version is for demo purpose only and gauge interest. You can only install few apps, few commands and may have bugs.
 
