@@ -1,5 +1,7 @@
 # Photon
-Linux Desktop Assistant, currently available only on for Ubuntu
+Linux Desktop Assistant
+
+Tested only on Ubuntu, should work on all major Linux distros with Flatpak support
 
 you can try on other distro it might work but I haven't tried it yet. I will release for other distros in future!
 
