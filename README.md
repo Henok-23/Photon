@@ -2,8 +2,10 @@
 Desktop Assistant (Beta - version 0.2)
 
 Tested only on Ubuntu, should work on all major Linux distros with Flatpak support.
-https://github.com/Henok-23/Photon/issues/1#issue-3687017547
-You can only:
+## Demo
+https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxYou can only:
+
+
 - Read emails the original or summary
 - Write gmail using AI by submitting your own prompt or write email by yourself
 - Install apps
