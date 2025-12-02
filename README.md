@@ -35,17 +35,22 @@ How to package photon on your own(your own API keys)
       python-dotenv
 - create your own google api (with gmail and people API included), openAI API (if you don't know how to do these just ask GPT or Claude, its not hard)
 - then create .env with the variables below and fill it with your own API keys
+  
     OPENAI_API_KEY= "?"
     id="?"
     secret="?"
 - then we build the flatpak with code below
+  
     flatpak-builder --force-clean build-dir org.desktop.Photon.yml
 -after than make it shareable/instabllable with these code below
+
     flatpak build-export repo build-dir
     flatpak build-bundle repo photon.flatpak org.desktop.Photon
 - finally we install it
+  
     flatpak install --user photon.flatpak
 - to run it
+  
     flatpak run org.desktop.PhotonH
 
   Thats all to package and install it. If you run into any error or bug,  don't panic just copy paste these readme, all files, and bugs to GPT and Claude and you will be able to resolve it!!
