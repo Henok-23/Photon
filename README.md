@@ -67,4 +67,4 @@ To run it:
 flatpak run org.desktop.Photon
 ```
 
-Thats all to package and install it. If you run into any error or bug, don't panic just copy paste these readme, all files, and bugs to GPT and Claude and you will be able to resolve it!!
+Thats all to package and install it. If you run into any error or bug, don't panic just copy paste these readme, all files, and bugs to GPT or Claude and you will be able to resolve it!!
