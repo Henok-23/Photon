@@ -37,18 +37,24 @@ How to package photon on your own(your own API keys)
 - then create .env with the variables below and fill it with your own API keys
   
     OPENAI_API_KEY= "?"
+  
     id="?"
+  
     secret="?"
 - then we build the flatpak with code below
   
     flatpak-builder --force-clean build-dir org.desktop.Photon.yml
+  
 -after than make it shareable/instabllable with these code below
 
     flatpak build-export repo build-dir
+    
     flatpak build-bundle repo photon.flatpak org.desktop.Photon
+    
 - finally we install it
   
     flatpak install --user photon.flatpak
+  
 - to run it
   
     flatpak run org.desktop.PhotonH
