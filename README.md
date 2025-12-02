@@ -16,7 +16,6 @@ Main value proposition is focus and simplicity!
 
 Photon's core will always remain open-source. If this project gains traction, I may introduce optional Pro features to cover API/server costs and sustain full-time development after I graduate from college in May. I want to say this early so there are no surprises later.
 
-This is beta version and my first release, I plan to integrate photon with email, calendar, slack etc.
 
 ## Download Photon
 
