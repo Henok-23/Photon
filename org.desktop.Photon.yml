@@ -1,0 +1,82 @@
+app-id: org.desktop.Photon
+runtime: org.kde.Platform
+runtime-version: "6.8"
+sdk: org.kde.Sdk
+command: photon
+finish-args:
+  - --share=network
+  - --share=ipc
+  - --socket=wayland
+  - --socket=x11
+  - --filesystem=home
+  - --talk-name=org.freedesktop.Flatpak
+  - --talk-name=org.freedesktop.Notifications
+  - --env=PYTHONUNBUFFERED=1
+  - --env=DISPLAY=:0
+  - --env=QT_QPA_PLATFORM=xcb
+
+modules:
+  - name: photon
+    buildsystem: simple
+    build-options:
+      env:
+        PIP_DISABLE_PIP_VERSION_CHECK: "1"
+        PIP_NO_CACHE_DIR: "1"
+    build-commands:
+      - python3 -m ensurepip --upgrade
+      - python3 -m pip install --upgrade pip wheel setuptools
+
+      - install -D flatpak/org.desktop.Photon.desktop /app/share/applications/org.desktop.Photon.desktop
+      - install -D flatpak/icon.png /app/share/icons/hicolor/512x512/apps/org.desktop.Photon.png
+
+      - python3 -m pip install --no-index --find-links=wheels wheels/*.whl -t /app/lib/python
+
+      - mkdir -p /app/bin
+      - install -D face.py /app/bin/face.py
+      - install -D em.py /app/bin/em.py
+      - install -D install.py /app/bin/install.py
+
+      # Main launcher
+      - |
+        cat > /app/bin/photon << 'EOF'
+        #!/bin/sh
+        export PYTHONPATH=/app/lib/python:${PYTHONPATH}
+        export PHOTON_IPC=unix:///tmp/photon
+        
+        # Force X11 for positioning support
+        export QT_QPA_PLATFORM=xcb
+        export DISPLAY="${DISPLAY:-:0}"
+        
+        # Try to find and use Xauthority
+        if [ -f "$HOME/.Xauthority" ]; then
+            export XAUTHORITY="$HOME/.Xauthority"
+        elif [ -f "/run/user/$(id -u)/gdm/Xauthority" ]; then
+            export XAUTHORITY="/run/user/$(id -u)/gdm/Xauthority"
+        fi
+        
+        cd /app/bin
+        exec python3 face.py "$@"
+        EOF
+      - chmod +x /app/bin/photon
+
+      # Email launcher wrapper
+      - |
+        cat > /app/bin/em << 'EOF'
+        #!/bin/sh
+        export PYTHONPATH=/app/lib/python:${PYTHONPATH}
+        
+        export QT_QPA_PLATFORM=xcb
+        export DISPLAY="${DISPLAY:-:0}"
+        
+        if [ -f "$HOME/.Xauthority" ]; then
+            export XAUTHORITY="$HOME/.Xauthority"
+        fi
+        
+        cd /app/bin
+        exec python3 em.py "$@"
+        EOF
+      - chmod +x /app/bin/em
+
+    sources:
+      - type: dir
+        path: .
