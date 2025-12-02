@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Photon
+Comment=AI-powered desktop assistant with Gmail integration
+Exec=photon
+Icon=org.desktop.Photon
+Type=Application
+Categories=Utility;Network;Email;Office;
+StartupNotify=true
+Keywords=email;gmail;assistant;AI;
