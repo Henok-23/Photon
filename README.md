@@ -2,8 +2,7 @@
 Desktop Assistant (Beta - version 0.2)
 
 Tested only on Ubuntu, should work on all major Linux distros with Flatpak support.
-<video src="https://github.com/Henok-23/yourreponame/raw/main/demoo.mp4" controls width="600"></video>
-
+<video src="https://github.com/Henok-23/Photon/raw/main/demoo.mp4" controls width="600"></video>
 
 You can only:
 - Read emails the original or summary
