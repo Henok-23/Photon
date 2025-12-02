@@ -1,4 +1,5 @@
-# Photon Desktop Assistant (Beta - version 0.2)
+# Photon 
+Desktop Assistant (Beta - version 0.2)
 
 Tested only on Ubuntu, should work on all major Linux distros with Flatpak support.
 
