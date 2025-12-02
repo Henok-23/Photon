@@ -6,7 +6,7 @@ Tested only on Ubuntu, should work on all major Linux distros with Flatpak suppo
 You can only:
 - Read emails the original or summary
 - Write gmail using AI by submitting your own prompt or write email by yourself
-- Install apps and may have bugs
+- Install apps
 
 This version is not local, I use openAI API because making it local is very resource intensive and require VRAM which most laptops don't have (including mine). Voice feature for opening apps is removed on this version.
 
