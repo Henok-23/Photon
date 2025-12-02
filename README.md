@@ -17,9 +17,13 @@ Main value proposition is focus and simplicity!
 Photon's core will always remain open-source. If this project gains traction, I may introduce optional Pro features to cover API/server costs and sustain full-time development after I graduate from college in May. I want to say this early so there are no surprises later.
 
 
-## Download Photon
+## Download Photon(very very simple)
 
-Please go to [photondesktop.com](https://photondesktop.com) to download and try it no need to package or do anything! I can only give first 100 access to photon because I haven't gotten approval from Google API access yet, and they limit users only for 100 users until they give approval. At the same time please go there and try to download it if it reaches limit, you still register and will let you know as soon as I get full API access.
+Please go to [photondesktop.com](https://photondesktop.com) to download and try it no need to package or do anything!
+
+I can only give first 100 access to photon because I haven't gotten approval from Google API access yet, and they limit users only for 100 users until they give approval. 
+
+At the same time please go there and try to download it if it reaches limit, you can still register and will let you know as soon as I get full gmail API access.
 
 ## How to package photon on your own (your own API keys)
 
