@@ -1,30 +1,48 @@
-# Photon
- Desktop Assistant(Beta - version 0.2)
+# Photon  
+**Desktop Assistant (Beta – version 0.2)**
 
-Tested only on Ubuntu, should work on all major Linux distros with Flatpak support
+Tested only on Ubuntu, should work on all major Linux distros with Flatpak support.
 
-You can only 
-  -Read emails the orignal or summary
-  -write gmail using AI by submitting your own prompt or write email by your self
-  -install apps and may have bugs.
-  - This version is not local, I use openAI API because making it local is very resource intesive and require VRAM which most laptops don't have(including mine)
-  - voice feature for opening apps is removed on this version.
+---
 
-Main value proposion is focus and simplicity!
+## What you can do right now
+- Read emails — the original or a summary  
+- Write Gmail using AI (your own prompt) or manually type your email  
+- Install apps (may have bugs)  
+- This version is **not local** — it uses the OpenAI API because making it local is very resource-intensive and requires VRAM most laptops (including mine) don’t have  
+- Voice feature for opening apps has been removed in this version  
 
-Long term plan
-Photon’s core will always remain open-source. If this project gains traction, I may introduce optional Pro features to cover API/server costs and sustain full-time development after I graduate from college in May. I want to say this early so there are no surprises later.
+**Main value proposition is focus and simplicity!**
 
+---
 
-This is beta version and my first release, I plan to integrate photon with email, calendar, slack etc. 
+## Long-term plan
+Photon’s core will always remain open-source. If this project gains traction, I may introduce optional **Pro features** to cover API/server costs and sustain full-time development after I graduate from college in May.
 
-Please go to [Photon](https://photondesktop.com) to download and try it no need to package or do anything ! 
-I can only give first 100 access to photon because I haven't gotten approval from Google API access yet, and they limit users only for 100 users until they give approval. At the same time please go there and try to download it if it reaches limit, you still register and will let you know as soon as I get full API access. 
+Saying this early so there are no surprises later.
 
-How to package photon on your own(your own API keys)
+This is a beta release and my first release. I plan to integrate Photon with email, calendar, Slack, etc.
 
-- please download all files from here and put it one folder
-- get inside wheels folder and download these dependacies with command below
+---
+
+## Download Photon
+
+➡️ **Go to [photondesktop.com](https://photondesktop.com)** to download and try it.  
+No need to package anything yourself!
+
+**Important:** I can only give access to the first 100 users because Google API still hasn’t approved my app. Google limits to 100 test users until full approval.
+
+You can still register even if it hits the limit — you’ll be notified when full API access is granted.
+
+---
+
+# How to package Photon yourself (using your own API keys)
+
+1. **Download all files from this repo and place them in one folder.**
+
+2. **Inside the `wheels` folder, download dependencies with:**
+
+    ```bash
     pip download --dest wheels \
       PySide6 \
       google-auth \
@@ -33,38 +51,55 @@ How to package photon on your own(your own API keys)
       google-api-python-client \
       openai \
       python-dotenv
-- create your own google api (with gmail and people API included), openAI API (if you don't know how to do these just ask GPT or Claude, its not hard)
-- then create .env with the variables below and fill it with your own API keys
-  
-    OPENAI_API_KEY= "?"
-  
+    ```
+
+3. **Create your own Google API**  
+   (include Gmail API and People API)  
+   and an **OpenAI API key**.  
+   If you don’t know how, ask GPT or Claude — it’s not hard.
+
+4. **Create `.env` with these variables:**
+
+    ```env
+    OPENAI_API_KEY="?"
     id="?"
-  
     secret="?"
-- then we build the flatpak with code below
-  
+    ```
+
+5. **Build the Flatpak:**
+
+    ```bash
     flatpak-builder --force-clean build-dir org.desktop.Photon.yml
-  
--after than make it shareable/instabllable with these code below
+    ```
 
+6. **Export + bundle it:**
+
+    ```bash
     flatpak build-export repo build-dir
-    
     flatpak build-bundle repo photon.flatpak org.desktop.Photon
-    
-- finally we install it
-  
+    ```
+
+7. **Install locally:**
+
+    ```bash
     flatpak install --user photon.flatpak
-  
-- to run it
-  
-    flatpak run org.desktop.PhotonH
+    ```
 
-  Thats all to package and install it. If you run into any error or bug,  don't panic just copy paste these readme, all files, and bugs to GPT and Claude and you will be able to resolve it!!
-    
+8. **Run it:**
 
+    ```bash
+    flatpak run org.desktop.Photon
+    ```
 
-  
+---
 
+## If you get any error or bug
+Don’t panic — just copy/paste:
+- this README  
+- all files  
+- the error message  
 
-https://github.com/user-attachments/assets/67eb398a-95bf-4ea6-9fdd-295123cc4c5e
+into GPT or Claude, and you’ll be able to resolve it.
+
+---
 
